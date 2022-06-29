@@ -6,6 +6,7 @@
 }
 :root{
     --color: #29f3c3;
+    /* 29f3c3 */
 }
 body{
     border: 8px solid var(--color);
@@ -14,10 +15,10 @@ body{
     font-weight: 400;
     min-height: 100vh;
     /* background-image: linear-gradient(to bottom right,black,#62377A); */
-    background-image: url('../images/background9.jpg');
-    background-size:contain;
+    background-image: url('../images/background8.jpg');
+    background-size:cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     /* background-image: linear-gradient(to right,#131313,#131313); */
 }
 #nav-desktop{
@@ -41,13 +42,13 @@ section{
 }
 #landing-page{
     color:white;
-    background-image: url('../images/background2.jpg');
+    /* background-image: url('../images/background2.jpg'); */
     display: flex;
     align-items: center;
     justify-content: center;
     margin:0% 5% 0 5%;
     border-radius: 10px;
-    /* background-image: linear-gradient(to right,#131313,#131313); */
+    background-image: linear-gradient(to right,#131313,#131313);
 }
 #landing-page .right-landing-page{
     display: none;
@@ -170,7 +171,7 @@ section{
     }
     .technologies-title{
         text-align: center;
-        font-size: 1.7em;
+        font-size: 3em;
         color:var(--color);
         margin-bottom: 1em;
     }
@@ -209,6 +210,7 @@ section{
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
+        align-items: center;
     }
     .technologies-list ul li{
         text-decoration: none;
@@ -278,7 +280,7 @@ section{
         /* padding-top: 100px; */
     }
     #recent-projects .recent-projects-title{
-        font-size: 2em;
+        font-size: 3em;
         color:var(--color);
         text-align: center;
     }
@@ -317,7 +319,7 @@ section{
         /* padding-top: 100px; */
     }
     #contact .left-contact .title{
-        font-size: 2em;
+        font-size: 3em;
         color:var(--color);
         margin-bottom: .5em;
         text-align: center;
@@ -384,7 +386,10 @@ section{
     }
     .technologies-list{
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns: 20% 20% 20% 20% auto;
+    }
+    .technologies-list ul{
+        min-height: 60vh;
     }
     .technologies-list ul li{
         font-size: 1em;
