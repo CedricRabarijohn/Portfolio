@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500&display=swap');
+*{
+    padding:0;
+    margin:0;
+    /* color: white; */
+}
+:root{
+    --color: #29f3c3;
+}
+body{
+    border: 8px solid var(--color);
+    border-top: 0;
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    /* background-image: linear-gradient(to bottom right,black,#62377A); */
+    background-image: url('../images/background9.jpg');
+    background-size:contain;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    /* background-image: linear-gradient(to right,#131313,#131313); */
+}
+#nav-desktop{
+    display: none;
+}
+ul {
+    list-style-type: none;
+}
+nav div:hover{
+    cursor: pointer;
+}
+nav div i{
+    color: var(--color);
+}
+section{
+    min-height: 100vh;
+    padding:50px;
+    color: white;
+    /* border-top: 1px solid var(--color); */
+    /* border-style:dotted; */
+}
+#landing-page{
+    color:white;
+    background-image: url('../images/background2.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0% 5% 0 5%;
+    border-radius: 10px;
+    /* background-image: linear-gradient(to right,#131313,#131313); */
+}
+#landing-page .right-landing-page{
+    display: none;
+}
+#about-me{
+    color:white;
+    min-height: auto;
+}
+#recent-projects{
+    color:white;
+}
+#contact{
+    color:white;
+}
+#contact input{
+    /* display: none; */
+    min-width: 235px;
+}
+#contact label{
+    /* text-align: center; */
+    color: var(--color);
+}
+/* Mobile styling */
+@media screen and (min-width: 50px) {
+    /* .icon{
+        color: var(--color);
+        position: fixed;
+        z-index: 6;
+    } */
+    .nav-menu-mobile{
+        position:fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        padding: 0px;
+        padding-left: 25px;
+        padding-right:25px;
+        font-size: 20px;
+        color:var(--color);
+        background-color: #1b1a1b;
+        text-align: end;
+        min-height: 50px;
+        /* opacity: .8; */
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-menu-mobile i{
+        color: var(--color);
+    }
+    #nav-mobile{
+        position: fixed;
+        right: 0;
+        padding-right: 25px;
+        background-color: #1b1a1b;
+        min-height: 100vh;
+        padding:20px;
+        width:175px;
+        display: none;
+        z-index: 5;
+        /* transition: opacity 100000s ease-out; */
+        opacity: 0;
+    }
+    #nav-mobile div{
+        margin-bottom: 2.5em;
+        color: white;
+    }
+    #bgNav{
+        display: none;
+        position:fixed;
+        background-color: #333;
+        inset: 0;
+        opacity: .5;
+        z-index: 4;
+    }
+    #landing-page{
+        /* align-items: center;
+        justify-content: center; */
+    }
+    #landing-page .self-description{
+        /* margin-top: 120px; */
+        margin-bottom: 30px;
+        font-size: 1.6em;
+        color:var(--color);
+        line-height: 2em;
+    }
+    
+    #landing-page .self-description .name{
+        font-weight: 500;
+        color: var(--color);
+        font-size: 1.2em;
+    }
+    #about-me{
+        display: flex;
+        flex-flow: column;
+        /* justify-content: center; */
+    }
+    #about-me .about-me-title{
+        text-align: center;
+        font-size: 2em;
+        color:var(--color);
+        margin-bottom: 1.2em;
+    }
+    #about-me .about-me-1{
+        margin-bottom: 1.5em;
+    }
+    #about-me .about-me-1 .year{
+        color:var(--color);
+    }
+    #about-me .about-me-1 .university{
+        color:var(--color);
+    }
+    #about-me .about-me-2{
+
+    }
+    #about-me .about-me-2 ul{
+        margin-top: 1.5em;
+        margin-left: 10px;
+    }
+    .technologies-title{
+        text-align: center;
+        font-size: 1.7em;
+        color:var(--color);
+        margin-bottom: 1em;
+    }
+    .technologies{
+        /* margin-top:20px;
+        margin-left:5px;
+        font-size: 1em; */
+    }
+    .technologies-list h2{
+        /* display: none; */
+        text-align: center;
+    }
+    .languages ul{
+    }
+    .languages ul li{
+    }
+    .front ul{
+    }
+    .front ul li{
+        
+    }
+    .backend ul{
+    }
+    .backend ul li{
+        
+    }
+    .technologies-list div{
+        background-color: rgb(31, 31, 31);
+        color: var(--color);
+        border-radius: 10px;
+        padding: 5px;
+        border: 2px solid var(--color);
+        margin: 0 10px 10px 0;
+    }
+    .technologies-list ul{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .technologies-list ul li{
+        text-decoration: none;
+        font-size: .8em;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        /* border: 2px solid var(--color); */
+        margin: 0 10px 10px 0;
+        padding: 3px;
+        border-radius: 8%;
+        min-width: 50px;
+        color: white;
+    }
+    .technologies-list ul li i{
+        font-size: 2em;
+    }
+    .html{
+        color: rgb(223, 70, 0);
+    }
+    .js{
+        color: yellow;
+    }
+    .ajax{
+        color:rgb(0, 93, 214);
+    }
+    .python{
+        color: rgb(15, 0, 82);
+    }
+    .java{
+        color:rgb(255, 0, 0);
+    }
+    .php{
+        color:rgb(162, 0, 255);
+    }
+    .react{
+        color:rgb(0, 93, 214);
+    }
+    .next{
+        color:#000000;
+    }
+    .bootstrap{
+        color:rgb(162, 0, 255);
+    }
+    .node{ 
+        color: rgb(0, 255, 0);
+    }
+    .mysql{
+        color: #fd5000;
+    }
+    .postgres{
+        color:rgba(4, 0, 255, 0.925);
+    }
+    .mongodb{
+        color: rgb(0, 212, 0);
+    }
+    .rest{
+        color:#1900ff;
+    }
+    .unity{
+        color:rgb(143, 143, 143);
+    }
+    .blender{
+        color:#fd7200;
+    }
+    #recent-projects{
+        /* padding-top: 100px; */
+    }
+    #recent-projects .recent-projects-title{
+        font-size: 2em;
+        color:var(--color);
+        text-align: center;
+    }
+    #projects{
+        display: block;
+    }
+    #projects .project .title{
+        color: var(--color);
+    } 
+    .project{
+        margin: 10px;
+        background-color: #252525;
+        padding: 5%;
+        border-radius: 10px;
+    }
+    .project .project-technos ul{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .project .project-technos ul li{
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        border: 2px solid rgb(59, 59, 59);
+        margin: 2px;  
+        padding: 5px;
+        border-radius: 10px;
+        font-size: .7em;
+    }
+    #contact{
+        display: flex;
+        flex-flow: column;
+        min-height: auto;
+        color: var(--color);
+        /* justify-content: center; */
+        /* padding-top: 100px; */
+    }
+    #contact .left-contact .title{
+        font-size: 2em;
+        color:var(--color);
+        margin-bottom: .5em;
+        text-align: center;
+    }
+    .right-contact{
+        text-align: center;
+    }
+    #contact input{
+        /* display: none; */
+        min-width: 235px;
+        min-height: 30px;
+    }
+    #contact .btn{
+        padding: 10px;
+        min-width: 235px;
+        background-color: var(--color);
+        border: 0px;
+    }
+
+}
+@media screen and (min-width: 600px) {
+    #landing-page .self-description{
+        font-size: 2.2em;
+    }
+}
+@media screen and (min-width: 800px){
+    .nav-menu-mobile{
+        display: none;
+    }
+    #nav-mobile{
+        display: none;
+    }
+    #bgNav{
+        display: none;
+    }
+    #nav-desktop{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        color: white;
+        min-height: 50px;
+        min-width: 100vw;
+        align-items: center;
+        z-index: 5;
+        background-color: #1b1a1b;
+        /* opacity: 0.5; */
+    }
+    #nav-desktop div{
+        margin: 0 2em 0 2em;
+    }
+    #landing-page{
+        display: block;
+        display: grid;
+        /* justify-content: center; */
+        grid-template-columns: 50% auto;
+    }
+    #landing-page .left-landing-page .self-description{
+        font-size: 2em;
+        /* background-color: #333; */
+    }
+    #landing-page .right-landing-page{
+        display: block;
+    }
+    .technologies-list{
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+    .technologies-list ul li{
+        font-size: 1em;
+    }
+}

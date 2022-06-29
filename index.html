@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="nav-menu-mobile">
+        <i class="fa-solid fa-laptop-code">
+            <span style="font-size: .8em;">Portfolio</span>
+        </i>
+        <i id="nav-mobile-button" class="fa-solid fa-bars"></i>
+    </nav>
+    <nav id="nav-mobile">
+        <div class="menu">
+            <h1><i class="fa-solid fa-laptop-code"></i> Menu</h1>
+        </div>
+        <div class="home-button" onclick="handleScrollTo('landing-page')">
+            <i class="fa-solid fa-house-chimney"></i> Home
+        </div>
+        <div class="techno-button" onclick="handleScrollTo('technologies')">
+            <i class="fa-solid fa-house-chimney"></i> Skills
+        </div>
+        <div class="projects-button" onclick="handleScrollTo('recent-projects')">
+            <i class="fa-solid fa-diagram-project"></i> Projects
+        </div>
+        <div class="contact-me-button" onclick="handleScrollTo('contact')">
+            <i class="fa-solid fa-file-signature"></i> Contact me
+        </div>
+    </nav>
+    <nav id="nav-desktop">
+        <div class="menu">
+            <h1><i class="fa-solid fa-laptop-code"></i> Portfolio</h1>
+        </div>
+        <div class="home-button" onclick="handleScrollTo('landing-page')">
+            <i class="fa-solid fa-house-chimney"></i> Home
+        </div>
+        <div class="techno-button" onclick="handleScrollTo('technologies')">
+            <i class="fa-solid fa-house-chimney"></i> Skills
+        </div>
+        <div class="projects-button" onclick="handleScrollTo('recent-projects')">
+            <i class="fa-solid fa-diagram-project"></i> Projects
+        </div>
+        <div class="contact-me-button" onclick="handleScrollTo('contact')">
+            <i class="fa-solid fa-file-signature"></i> Contact me
+        </div>
+    </nav>
+    <div id="bgNav"></div>
+    <section id="landing-page" data-aos="zoom-in">
+        <div class="left-landing-page">
+            <div class="self-description">
+                <span class="name">Cedric Rabarijohn, </span>
+                <br />
+                &lt;<span id="role"></span>/&gt;<br /> <span style="color: white">web developper<b
+                        style="color: #29f3c3;"> .</b></span>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="right-landing-page">
+            <i style="color:#29f3c3; font-size: 10em;" class="fa-solid fa-mug-saucer"></i>
+        </div>
+    </section>
+    <section id="technologies">
+        <div class="technologies-title">
+            &lt;<span id="technologies-title"></span>/&gt;
+        </div>
+        <div class="technologies-list">
+            <div class="languages">
+                <h2><u>Languages</u></h2>
+                <ul>
+                    <li><i class="fa-brands fa-js js"></i> Javascript</li>
+                    <li><i class="fa-brands fa-python python"></i> Python</li>
+                    <li>C#</li>
+                    <li><i class="fa-brands fa-java java"></i> Java</li>
+                    <li><i class="fa-brands fa-php php"></i> PHP</li>
+                </ul>
+            </div>
+            <div class="front">
+                <h2><u>Front-end</u></h2>
+                <ul>
+                    <li><i class="fa-brands fa-html5 html"></i> Html + css</li>
+                    <li><i class="fa-brands fa-js js"></i> Vanilla js</li>
+                    <li><i class="fa-brands fa-js js"></i> JQuery</li>
+                    <li><i class="fa-brands fa-js ajax"></i> Ajax</li>
+                    <li><i class="fa-brands fa-react react"></i> React js + Material UI</li>
+                    <li><i class="fa-brands fa-js next"></i> Next js</li>
+                    <li><i class="fa-brands fa-bootstrap bootstrap"></i> Bootstrap 4 / 5</li>
+                </ul>
+            </div>
+            <div class="backend">
+                <h2><u>Back-end</u></h2>
+                <ul>
+                    <li><i class="fa-brands fa-node node"></i> Node js</li>
+                    <li><i class="fa-brands fa-js js"></i> Express JS</li>
+                    <li><i class="fa-brands fa-java java"></i> Java Servlet + JSP</li>
+                    <li><i class="fa-brands fa-java java"></i> Spring boot</li>
+                    <li><i class="fa-brands fa-laravel php"></i> Laravel</li>
+                </ul>
+            </div>
+            <div class="sgbd">
+                <h2><u>SGBD</u></h2>
+                <ul>
+                    <li><i class="fa-solid fa-database postgres"></i> Postgresql</li>
+                    <li><i class="fa-solid fa-database mysql"></i> Mysql</li>
+                    <li><i class="fa-solid fa-leaf mongodb"></i></i> Mongodb</li>
+                </ul>
+            </div>
+            <div class="apis">
+                <h2><u>API</u></h2>
+                <ul>
+                    <li><i class="fa-solid fa-gears rest"></i> Rest API</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="recent-projects">
+        <div class="recent-projects-title">
+            &lt;<span class="text"></span>/&gt;
+        </div>
+        <div id="projects">
+            <div class="project project-1">
+                <img src="" alt="">
+                <div class="title">
+                    <h1><u>Ecommerce website</u></h1>
+                </div>
+
+                <div class="project-technos">
+                    <ul>
+                        <li><i class="fa-brands fa-react react"></i> React js</li>
+                        <li><i class="fa-brands fa-node node"></i> Node js</li>
+                        <li><i class="fa-brands fa-js js"></i> Express js</li>
+                        <li><i class="fa-solid fa-leaf mongodb"></i> MongoDB</li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <!-- Description -->
+                </div>
+                <div class="captures">
+                    <!-- Captures -->
+                </div>
+            </div>
+            <div class="project project-2">
+                <img src="" alt="">
+                <div class="title">
+                    <h1><u>Restauration service application</u></h1>
+                </div>
+
+                <div class="project-technos">
+                    <ul>
+                        <li><i class="fa-brands fa-java java"></i> Java Servlet+JSP</li>
+                        <li><i class="fa-solid fa-database mysql"></i> Mysql</li>
+                    </ul>
+                </div>
+                <div class="description">
+
+                </div>
+            </div>
+            <div class="project project-3">
+                <img src="" alt="">
+                <div class="title">
+                    <h1><u>Final product production management</u></h1>
+                </div>
+
+                <div class="project-technos">
+                    <ul>
+                        <li><i class="fa-brands fa-react react"></i> React js</li>
+                        <li><i class="fa-brands fa-node node"></i> Node js</li>
+                        <li><i class="fa-brands fa-js js"></i> Express js</li>
+                        <li><i class="fa-solid fa-database postgres"></i> PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="description">
+
+                </div>
+            </div>
+            <div class="project project-4">
+                <img src="" alt="">
+                <div class="title">
+                    <h1><u>Endless ball runner game</u></h1>
+                </div>
+
+                <div class="project-technos">
+                    <ul>
+                        <li><i class="fa-brands fa-unity unity"></i> Unity 3D ( C# )</li>
+                        <li><i class="fa-brands fa-blender blender"></i> Blender</li>
+                    </ul>
+                </div>
+                <div class="description">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="left-contact">
+            <p class="title">
+                &lt;<span class="text"></span>/&gt;
+            </p>
+        </div>
+        <div class="right-contact">
+            <u>Phone number</u> : <span style="color:white"> +261 34 83 571 53</span>
+            <br>
+            <u>email</u> : <span style="color:white"> cedrictianarabarijohn@gmail.com</span>
+            <br>
+            <br>
+            <form id="contact-form" action="#">
+                <div class="names-section">
+                    <div>
+                        <label for="from_name">Your name</label>
+                        <p></p>
+                        <input type="text" id="name" name="from_name" />
+                    </div>
+                </div>
+                <div class="email-section">
+                    <label for="email">Email</label>
+                    <p></p>
+                    <input type="email" name="email" id="">
+                </div>
+                <div class="help-section">
+                    <label for="message">What can I help you with ?</label>
+                    <p></p>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./assets/js/core.js"></script>
+<script src="./assets/js/script.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
