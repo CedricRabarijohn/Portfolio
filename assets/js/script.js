@@ -71,7 +71,7 @@ bgNav.addEventListener('click', () => {
     displayElement(bgNav, false);
 })
 
-// Scripts of projects
+// Scripts of projects *************************************************************
 
 //ecommerce
 const expandEcommerce = document.getElementsByClassName("ecommerce-expand")[0]
@@ -124,7 +124,7 @@ collapseBall.addEventListener('click', () => {
     collapseBall.style.display = "none"
 })
 
-//************************** */
+//********************************************************************************************* */
 
 document.addEventListener('scroll', (e) => {
     // console.log(e)

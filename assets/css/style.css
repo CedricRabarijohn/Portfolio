@@ -131,6 +131,7 @@ section{
     #landing-page{
         /* align-items: center;
         justify-content: center; */
+        margin-bottom: 30px;
     }
     #landing-page .self-description{
         /* margin-top: 120px; */
@@ -289,7 +290,7 @@ section{
     } 
     .project{
         margin: 10px;
-        background-color: #252525;
+        background-color: rgb(31, 31, 31);;
         padding: 5%;
         border-radius: 10px;
     }
@@ -301,7 +302,7 @@ section{
         text-align: center;
         display: flex;
         flex-flow: column wrap;
-        border: 2px solid rgb(59, 59, 59);
+        border: 2px solid rgb(99, 99, 99);
         margin: 2px;
         padding: 5px;
         border-radius: 10px;
@@ -343,13 +344,14 @@ section{
         flex-flow: column;
         min-height: auto;
         color: var(--color);
+        padding-bottom: 2em;
         /* justify-content: center; */
         /* padding-top: 100px; */
     }
     #contact .left-contact .title{
         font-size: 1.5em;
         color:var(--color);
-        margin-bottom: 5em;
+        margin-bottom: 3em;
         text-align: center;
     }
     .right-contact{
@@ -418,7 +420,7 @@ section{
     }
     .technologies-list{
         display: grid;
-        grid-template-columns: 20% 20% 20% 20% auto;
+        grid-template-columns: 50% auto;
         /* grid-template-columns: 25% 25% auto; */
     }
     .technologies-list ul{
@@ -432,7 +434,7 @@ section{
         font-weight: bold;
     }
     .right-contact .infos {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .technologies-list h2{
         margin-bottom: 2em;
