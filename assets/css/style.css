@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 *{
     padding:0;
     margin:0;
@@ -11,14 +12,16 @@
 body{
     border: 8px solid var(--color);
     border-top: 0;
-    font-family: 'Changa', sans-serif;
+    /* font-family: 'Changa', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     min-height: 100vh;
     /* background-image: linear-gradient(to bottom right,black,#62377A); */
-    background-image: url('../images/background7.jpg');
+    background-image: url('../images/background8.jpg');
     background-size:cover;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+    /* background-color: rgb(36, 36, 36); */
     /* background-image: linear-gradient(to right,#131313,#131313); */
 }
 #nav-desktop{
@@ -132,7 +135,7 @@ section{
     #landing-page .self-description{
         /* margin-top: 120px; */
         margin-bottom: 30px;
-        font-size: 1.6em;
+        font-size: 1.2em;
         color:var(--color);
         line-height: 2em;
     }
@@ -140,38 +143,12 @@ section{
     #landing-page .self-description .name{
         font-weight: 500;
         color: var(--color);
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
-    #about-me{
-        display: flex;
-        flex-flow: column;
-        /* justify-content: center; */
-    }
-    #about-me .about-me-title{
-        text-align: center;
-        font-size: 2em;
-        color:var(--color);
-        margin-bottom: 1.2em;
-    }
-    #about-me .about-me-1{
-        margin-bottom: 1.5em;
-    }
-    #about-me .about-me-1 .year{
-        color:var(--color);
-    }
-    #about-me .about-me-1 .university{
-        color:var(--color);
-    }
-    #about-me .about-me-2{
-
-    }
-    #about-me .about-me-2 ul{
-        margin-top: 1.5em;
-        margin-left: 10px;
-    }
+    
     .technologies-title{
         text-align: center;
-        font-size: 3em;
+        font-size: 1.5em;
         color:var(--color);
         margin-bottom: 1em;
     }
@@ -182,6 +159,7 @@ section{
     }
     .technologies-list h2{
         /* display: none; */
+        font-size: 1em;
         text-align: center;
     }
     .languages ul{
@@ -280,15 +258,19 @@ section{
         /* padding-top: 100px; */
     }
     #recent-projects .recent-projects-title{
-        font-size: 3em;
+        font-size: 1.5em;
         color:var(--color);
         text-align: center;
+        margin-bottom: 50px;
     }
     #projects{
         display: block;
     }
     #projects .project .title{
         color: var(--color);
+        /* display: none; */
+        font-weight:normal;
+        font-size: .7em;
     } 
     .project{
         margin: 10px;
@@ -319,9 +301,9 @@ section{
         /* padding-top: 100px; */
     }
     #contact .left-contact .title{
-        font-size: 3em;
+        font-size: 1.5em;
         color:var(--color);
-        margin-bottom: .5em;
+        margin-bottom: 5em;
         text-align: center;
     }
     .right-contact{
@@ -378,7 +360,7 @@ section{
         grid-template-columns: 50% auto;
     }
     #landing-page .left-landing-page .self-description{
-        font-size: 2em;
+        font-size: 1.5em;
         /* background-color: #333; */
     }
     #landing-page .right-landing-page{
@@ -387,9 +369,10 @@ section{
     .technologies-list{
         display: grid;
         grid-template-columns: 20% 20% 20% 20% auto;
+        /* grid-template-columns: 25% 25% auto; */
     }
     .technologies-list ul{
-        min-height: 60vh;
+        /* min-height: 60vh; */
     }
     .technologies-list ul li{
         font-size: 1em;

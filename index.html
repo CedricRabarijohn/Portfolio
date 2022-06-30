@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="./assets/js/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"
+        integrity="sha256-cHVO4dqZfamRhWD7s4iXyaXWVK10odD+qp4xidFzqTI=" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
 
@@ -56,9 +58,9 @@
         </div>
     </nav>
     <div id="bgNav"></div>
-    <section id="landing-page" data-aos="zoom-in">
+    <section id="landing-page">
         <div class="left-landing-page">
-            <div class="self-description">
+            <div class="self-description" data-aos="fade-right">
                 <span class="name">Cedric Rabarijohn, </span>
                 <br />
                 &lt;<span id="role"></span>/&gt;<br /> <span style="color: white">web developper<b
@@ -69,14 +71,15 @@
             </div>
         </div>
         <div class="right-landing-page">
-            <i style="color:#29f3c3; font-size: 10em;" class="fa-solid fa-mug-saucer"></i>
+            <!-- <img style="border-radius: 50%;" width="300" height="auto" src="./assets/images/me.jpg" alt=""> -->
+            <i style="color:#29f3c3; font-size: 7em;" class="fa-solid fa-mug-saucer"></i>
         </div>
     </section>
     <section id="technologies">
         <div class="technologies-title">
             &lt;<span id="technologies-title"></span>/&gt;
         </div>
-        <div class="technologies-list">
+        <div class="technologies-list" data-aos="zoom-in">
             <div class="languages">
                 <h2><u>Languages</u></h2>
                 <ul>
@@ -124,12 +127,55 @@
                 </ul>
             </div>
         </div>
+        <!-- <div>
+            <div class="chart-container" style="height:auto; width:30vw">
+                <canvas id="myChart"></canvas>
+            </div>
+            <script>
+                const chart = document.getElementById("myChart")
+                window.addEventListener('beforeprint', () => {
+                    chart.resize(10, 10);
+                });
+                window.addEventListener('afterprint', () => {
+                    chart.resize();
+                });
+                const ctx = document.getElementById('myChart').getContext('2d');
+                const myChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: [
+                            'Red',
+                            'Blue',
+                            'Yellow'
+                        ],
+                        datasets: [{
+                            label: 'My First Dataset',
+                            data: [300, 50, 100],
+                            backgroundColor: [
+                                'rgb(255, 99, 132)',
+                                'rgb(54, 162, 235)',
+                                'rgb(255, 205, 86)'
+                            ],
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+        </div> -->
     </section>
+
     <section id="recent-projects">
         <div class="recent-projects-title">
             &lt;<span class="text"></span>/&gt;
         </div>
-        <div id="projects">
+        <div id="projects" data-aos="zoom-in">
             <div class="project project-1">
                 <img src="" alt="">
                 <div class="title">
@@ -210,27 +256,35 @@
             </p>
         </div>
         <div class="right-contact">
-            <u>Phone number</u> : <span style="color:white"> +261 34 83 571 53</span>
-            <br>
-            <u>email</u> : <span style="color:white"> cedrictianarabarijohn@gmail.com</span>
-            <br>
-            <br>
-            <form id="contact-form" action="#">
+            <div data-aos="zoom-in">
+                <u>Phone number</u> : <span style="color:white; font-size: 1.5em;"> +261 34 83 571 53</span>
+                <br />
+                <br />
+                <u>email</u> : <span style="color:white; font-size: 1.5em"> cedrictianarabarijohn@gmail.com</span>
+                <br>
+                <br>
+            </div>
+            <form id="contact-form" action="#" data-aos="zoom-in">
                 <div class="names-section">
                     <div>
                         <label for="from_name">Your name</label>
-                        <p></p>
-                        <input type="text" id="name" name="from_name" />
+                        <br />
+                        <br />
+                        <input type="text" id="from_name" name="from_name" />
                     </div>
                 </div>
+                <br />
                 <div class="email-section">
                     <label for="email">Email</label>
-                    <p></p>
+                    <br />
+                    <br />
                     <input type="email" name="email" id="">
                 </div>
+                <br />
                 <div class="help-section">
                     <label for="message">What can I help you with ?</label>
-                    <p></p>
+                    <br />
+                    <br />
                     <textarea name="message" id="message" cols="30" rows="5"></textarea>
                 </div>
                 <div>
@@ -243,6 +297,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="./assets/js/core.js"></script>
 <script src="./assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
     AOS.init();
 </script>
