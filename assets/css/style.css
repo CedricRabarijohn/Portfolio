@@ -309,6 +309,7 @@ section{
         font-size: .7em;
     }
     .expand-project{
+        font-size: 0.7em;
         margin-top: 10px;
         margin-bottom: 10px;
         background-color:#29f3c3; 
@@ -322,6 +323,7 @@ section{
         cursor: pointer;
     }
     .collapse-project{
+        font-size: 0.7em;
         margin-left: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
