@@ -374,7 +374,16 @@ section{
     .technologies-list ul{
         /* min-height: 60vh; */
     }
+    .technologies-title{
+        margin-bottom: 2em;
+    }
     .technologies-list ul li{
         font-size: 1em;
+    }
+    .right-contact .infos {
+        font-size: 1.5em;
+    }
+    .technologies-list h2{
+        margin-bottom: 2em;
     }
 }
