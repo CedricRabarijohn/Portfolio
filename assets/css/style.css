@@ -302,7 +302,7 @@ section{
         display: flex;
         flex-flow: column wrap;
         border: 2px solid rgb(59, 59, 59);
-        margin: 2px;  
+        margin: 2px;
         padding: 5px;
         border-radius: 10px;
         font-size: .7em;
