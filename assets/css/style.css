@@ -307,6 +307,21 @@ section{
         border-radius: 10px;
         font-size: .7em;
     }
+    .expand-project{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color:#29f3c3; 
+        width: 20px; 
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .expand-project:hover{
+        cursor: pointer;
+    }
+    .captures{
+        display: none;
+    }
     #contact{
         display: flex;
         flex-flow: column;
