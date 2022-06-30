@@ -20,7 +20,7 @@ typewriter.typeString(`<span style=${style}>Back-end</span>`)
     .start();
 
 let technoTitle = document.getElementById("technologies-title")
-let technoTitleTypewriter = new Typewriter(technoTitle,{
+let technoTitleTypewriter = new Typewriter(technoTitle, {
     loop: true,
     delay: 100
 })
@@ -71,6 +71,61 @@ bgNav.addEventListener('click', () => {
     displayElement(bgNav, false);
 })
 
+// Scripts of projects
+
+//ecommerce
+const expandEcommerce = document.getElementsByClassName("ecommerce-expand")[0]
+const captureEcommerce = document.getElementsByClassName("captures-ecommerce")[0]
+const collapseEcommerce = document.getElementsByClassName("ecommerce-collapse")[0]
+expandEcommerce.addEventListener('click', () => {
+    displayElement(captureEcommerce, true)
+    displayElement(collapseEcommerce, true)
+})
+collapseEcommerce.addEventListener('click', () => {
+    displayElement(captureEcommerce, false)
+    displayElement(collapseEcommerce, false)
+})
+
+//restaurant
+const expandRestaurant = document.getElementsByClassName("restaurant-expand")[0]
+const captureRestaurant = document.getElementsByClassName("captures-restaurant")[0]
+const collapseRestaurant = document.getElementsByClassName("restaurant-collapse")[0]
+expandRestaurant.addEventListener('click', () => {
+    captureRestaurant.style.display = "block"
+    collapseRestaurant.style.display = "block"
+})
+collapseRestaurant.addEventListener('click', () => {
+    captureRestaurant.style.display = "none"
+    collapseRestaurant.style.display = "none"
+})
+//Final product
+const expandProductMngmt = document.getElementsByClassName("productMngmt-expand")[0]
+const captureProductMngmt = document.getElementsByClassName("captures-productMngmt")[0]
+const collapseProductMngmt = document.getElementsByClassName("productMngmt-collapse")[0]
+expandProductMngmt.addEventListener('click', () => {
+    captureProductMngmt.style.display = "block"
+    collapseProductMngmt.style.display = "block"
+})
+collapseProductMngmt.addEventListener('click', () => {
+    captureProductMngmt.style.display = "none"
+    collapseProductMngmt.style.display = "none"
+})
+
+//Endless Runner
+const expandBall = document.getElementsByClassName("ball-expand")[0]
+const captureBall = document.getElementsByClassName("captures-ball")[0]
+const collapseBall = document.getElementsByClassName("ball-collapse")[0]
+expandBall.addEventListener('click', () => {
+    captureBall.style.display = "block"
+    collapseBall.style.display = "block"
+})
+collapseBall.addEventListener('click', () => {
+    captureBall.style.display = "none"
+    collapseBall.style.display = "none"
+})
+
+//************************** */
+
 document.addEventListener('scroll', (e) => {
     // console.log(e)
 })
@@ -95,27 +150,27 @@ const handleScrollTo = (target) => {
 const btn = document.getElementsByClassName('btn')[0];
 // btn.innerHTML = 'lelena'
 document.getElementById('contact-form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-    const email = this.email.value;
-    const name = this.from_name.value;
-    const message = this.message.value;
-    if(!email | !name | !message){
-        return
-    }
-    btn.innerHTML = "sending ..."
-   const serviceID = 'default_service';
-   const templateID = 'template_e1gywld';
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+        const email = this.email.value;
+        const name = this.from_name.value;
+        const message = this.message.value;
+        if (!email | !name | !message) {
+            return
+        }
+        btn.innerHTML = "sending ..."
+        const serviceID = 'default_service';
+        const templateID = 'template_e1gywld';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.innerHTML = "Email sent !"
-      alert('Email sent successfully !');
-      window.location.reload()
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-      console.log(err)
-      btn.innerHTML = "Submit"
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.innerHTML = "Email sent !"
+                alert('Email sent successfully !');
+                window.location.reload()
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+                console.log(err)
+                btn.innerHTML = "Submit"
+            });
     });
-});
