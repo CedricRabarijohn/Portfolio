@@ -145,7 +145,22 @@ section{
         color: var(--color);
         font-size: 1.5em;
     }
-    
+    .more{
+    }
+    .more a{
+        /* display: none; */
+        text-decoration: none;
+        /* border: 1px solid ; */
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: var(--color);
+        color: black;
+        font-weight: bold;
+    }
+    .more a:hover{
+        cursor: pointer;
+    }
     .technologies-title{
         text-align: center;
         font-size: 1.5em;
@@ -356,11 +371,15 @@ section{
     #landing-page{
         display: block;
         display: grid;
+        margin: 5em;
+        margin-top: 0;
         /* justify-content: center; */
         grid-template-columns: 50% auto;
     }
     #landing-page .left-landing-page .self-description{
         font-size: 1.5em;
+        
+        /* text-align: start; */
         /* background-color: #333; */
     }
     #landing-page .right-landing-page{
@@ -378,7 +397,8 @@ section{
         margin-bottom: 2em;
     }
     .technologies-list ul li{
-        font-size: 1em;
+        /* font-size: 1em; */
+        font-weight: bold;
     }
     .right-contact .infos {
         font-size: 1.5em;
