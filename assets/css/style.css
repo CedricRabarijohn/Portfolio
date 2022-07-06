@@ -10,6 +10,7 @@
     /* 29f3c3 */
 }
 body{
+    scroll-behavior:smooth;
     border: 8px solid var(--color);
     border-top: 0;
     /* font-family: 'Changa', sans-serif; */
