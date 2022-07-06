@@ -141,14 +141,14 @@ const projects = document.getElementById("recent-projects");
 const contact = document.getElementById("contact");
 
 const handleScrollTo = (target) => {
-    if (target == sections.HOME) home.scrollIntoView();
+    /*if (target == sections.HOME) home.scrollIntoView();
     else if (target == sections.TECHNOS) technologies.scrollIntoView();
     else if (target == sections.PROJECTS) projects.scrollIntoView();
-    else if (target == sections.CONTACT) contact.scrollIntoView();
+    else if (target == sections.CONTACT) contact.scrollIntoView(); */
 }
 
 const btn = document.getElementsByClassName('btn')[0];
-// btn.innerHTML = 'lelena'
+
 document.getElementById('contact-form')
     .addEventListener('submit', function (event) {
         event.preventDefault();
