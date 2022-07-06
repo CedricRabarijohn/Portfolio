@@ -9,6 +9,13 @@
     --color: #29f3c3;
     /* 29f3c3 */
 }
+html{
+    scroll-behavior:smooth;
+}
+a{
+    text-decoration:none;
+    color:white;
+} 
 body{
     scroll-behavior:smooth;
     border: 8px solid var(--color);
